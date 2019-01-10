@@ -3,7 +3,7 @@ services:
   - docker 
 
 before_install:
-  - docker build -f avinashkunuje/docker-tuts -f Dockerfile.dev .
+  - docker build -t avinashkunuje/docker-tuts -f Dockerfile.dev .
 
 script:
   - docker run avinashkunuje/docker-tuts npm run test -- --coverage
