@@ -6,4 +6,4 @@ before_install:
   - docker build -f avinashkunuje/docker-tuts -f Dockerfile.dev .
 
 script:
-  -docker run avinashkunuje/docker-tuts npm run test -- --coverage
+  - docker run avinashkunuje/docker-tuts npm run test -- --coverage
